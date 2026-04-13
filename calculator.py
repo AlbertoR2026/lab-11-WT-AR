@@ -8,7 +8,7 @@ One function per operation, in order.
 
 import math
 
-# https://github.com/AlbertoR2026/lab-10-WT-AR
+# https://github.com/AlbertoR2026/lab-11-WT-AR
 # Partner 1: William Tong
 # Partner 2: Alberto Rios
 
