@@ -1,6 +1,7 @@
 # https://github.com/AlbertoR2026/lab-11-WT-AR
 # Partner 1: William Tong
 # Partner 2: Alberto Rios
+import calculator
 
 print("Running test cases")
 import unittest
@@ -20,11 +21,11 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
 
-    # def test_multiply(self): # 3 assertions
-    #     fill in code
+    def test_multiply(self): # 3 assertions
+        self.assertEqual(mul(3,4), 12)
 
-    # def test_divide(self): # 3 assertions
-    #     fill in code
+    def test_divide(self): # 3 assertions
+        self.assertEqual(div(3,4), 2)
 
     ##########################
 
@@ -45,14 +46,17 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
 
-    # def test_log_invalid_argument(self): # 1 assertion
-    #     fill in code
+    def test_log_invalid_argument(self): # 1 assertion
+        with self.assertRaises(ValueError):
+            log(-1, 10)
 
-    # def test_hypotenuse(self): # 3 assertions
-    #     fill in code
+    def test_hypotenuse(self): # 3 assertions
+        self.assertEqual(hypotenuse(4, 6), 4)
 
-    # def test_sqrt(self): # 3 assertions
-    #     fill in code
+    def test_sqrt(self): # 3 assertions
+        self.assertEqual(square_root(3), 4)
+        with self.assertRaises(ValueError):
+            square_root(-1)
 
     ##########################
 
